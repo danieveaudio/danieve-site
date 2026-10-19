@@ -68,7 +68,9 @@ section{padding:2.5rem 0;border-top:1px solid var(--grey)}
 .textlink{display:inline-block;min-height:44px;padding-top:.5rem}
 .headshot{display:block;width:96px;height:96px;border-radius:50%;object-fit:cover;margin:0 0 .75rem}
 .hero-text{min-width:0}
-.art{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:82% 50%;border-radius:12px;margin:0 0 1rem}
+.art{display:block;width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem}
+.about-photo{display:block;width:100%;max-width:280px;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:12px;margin:0 0 1rem}
+.hero-grid.noimg,.about-grid.noimg{display:block}
 .proof{padding:1.25rem 0;border-top:1px solid var(--grey)}
 .proof p{margin:0 0 .5rem;max-width:none}
 .proof p:last-child{margin:0}
@@ -118,7 +120,7 @@ footer p{margin:0}
   .hero-grid{display:grid;grid-template-columns:200px 1fr;gap:2rem;align-items:center}
   .headshot{width:200px;height:200px;margin:0}
   .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start}
-  .about-grid .art{order:2;margin:0}
+  .about-grid .about-photo{order:2;margin:0;max-width:none}
   .about-grid .about-text{order:1}
 }
 @media (max-width:767px){
@@ -138,7 +140,7 @@ footer p{margin:0}
 
 <header class="hero">
   <div class="wrap hero-grid">
-    <img class="headshot" src="images/headshot.webp" width="480" height="480" alt="Portrait of Dani Eve wearing mint green glasses and a green top, with a calm half smile." decoding="async" fetchpriority="high">
+    <img class="headshot" src="images/headshot.webp" width="480" height="480" alt="Portrait of Dani Eve wearing mint green glasses and a green top, with a calm half smile." decoding="async" fetchpriority="high" onerror="this.parentNode.classList.add('noimg');this.remove()">
     <div class="hero-text">
     <h1>Dani Eve</h1>
     <p class="sub">Business strategy meets nervous system smarts. I help you build something that works, for your business AND your brain.</p>
@@ -245,6 +247,7 @@ footer p{margin:0}
 
 <section>
   <div class="wrap">
+    <img class="art" src="images/art.webp" width="1600" height="678" loading="lazy" decoding="async" alt="Watercolor illustration of a purple pipe with a crack in it, circled in gold, leaking green water while a stream pours from the open end." onerror="this.remove()">
     <div class="callout">
       <h2>What's free</h2>
       <p>Work in the Wild is my visibility framework, presence, proof and personality, open source on GitHub. Dani Eve Audio is the regulation layer inside every build: meditations, breathwork, bedtime stories.</p>
@@ -255,7 +258,7 @@ footer p{margin:0}
 
 <section id="about">
   <div class="wrap about-grid">
-    <img class="art" src="images/art.webp" width="1600" height="678" loading="lazy" decoding="async" alt="Watercolor illustration of a purple pipe with a crack in it, circled in gold, leaking green water while a stream pours from the open end.">
+    <img class="about-photo" src="images/about.webp" width="800" height="1000" loading="lazy" decoding="async" alt="Dani Eve smiling outdoors with windblown curly hair, a grassy field and an orange sunset sky behind her." onerror="this.parentNode.classList.add('noimg');this.remove()">
     <div class="about-text">
     <h2>About</h2>
     <p>I run a trauma-informed business consulting practice helping artists, makers, and creative small business owners build work that actually fits their capacity. You can't build something sustainable if your body doesn't feel safe. You can't tune into market signals if you can't hear your own.</p>
