@@ -9,6 +9,10 @@
 <meta property="og:url" content="https://danieve.com/">
 <meta property="og:title" content="Dani Eve | Business strategy meets nervous system smarts">
 <meta property="og:description" content="Business strategy meets nervous system smarts. For artists, makers and creative small businesses. Toronto, and anywhere on Zoom.">
+<meta property="og:image" content="https://danieve.com/images/headshot.webp">
+<meta property="og:image:width" content="480">
+<meta property="og:image:height" content="480">
+<meta property="og:image:alt" content="Portrait of Dani Eve wearing mint green glasses and a green top, with a calm half smile.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
@@ -28,7 +32,7 @@ var CONFIG = {
   LINKS: {
     BOOK_BORROW_MY_BRAIN: "https://ko-fi.com/s/f42e7205a2",
     WORK_IN_THE_WILD: "https://ko-fi.com/danieve",
-    AUDIO: "https://www.youtube.com/@danieveaudio",
+    AUDIO: "https://www.youtube.com/@DaniEveintheWild",
     INSTAGRAM: "https://www.instagram.com/itsallmarketing_IAM",
     KOFI: "https://ko-fi.com/danieve",
     COMMISSIONS: "https://ko-fi.com/danieve/commissions"
@@ -62,6 +66,9 @@ section{padding:2.5rem 0;border-top:1px solid var(--grey)}
 .btn:hover{filter:brightness(.94)}
 .note{font-size:.9375rem;color:var(--ink);margin:.5rem 0 0}
 .textlink{display:inline-block;min-height:44px;padding-top:.5rem}
+.headshot{display:block;width:96px;height:96px;border-radius:50%;object-fit:cover;margin:0 0 .75rem}
+.hero-text{min-width:0}
+.art{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:82% 50%;border-radius:12px;margin:0 0 1rem}
 .proof{padding:1.25rem 0;border-top:1px solid var(--grey)}
 .proof p{margin:0 0 .5rem;max-width:none}
 .proof p:last-child{margin:0}
@@ -108,6 +115,11 @@ footer p{margin:0}
   .card{padding:1.5rem 1.25rem}
   .phases{grid-template-columns:1fr 1fr}
   .hero{padding:3rem 0 2.5rem}
+  .hero-grid{display:grid;grid-template-columns:200px 1fr;gap:2rem;align-items:center}
+  .headshot{width:200px;height:200px;margin:0}
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start}
+  .about-grid .art{order:2;margin:0}
+  .about-grid .about-text{order:1}
 }
 @media (max-width:767px){
   .hero .btn{width:100%}
@@ -125,13 +137,16 @@ footer p{margin:0}
 <body>
 
 <header class="hero">
-  <div class="wrap">
+  <div class="wrap hero-grid">
+    <img class="headshot" src="images/headshot.webp" width="480" height="480" alt="Portrait of Dani Eve wearing mint green glasses and a green top, with a calm half smile." decoding="async" fetchpriority="high">
+    <div class="hero-text">
     <h1>Dani Eve</h1>
     <p class="sub">Business strategy meets nervous system smarts. I help you build something that works, for your business AND your brain.</p>
     <p>I find where the value is getting lost, give it a name you can actually hold onto, and build the system that carries it, shaped around how you really work.</p>
     <p>For artists, makers and creative small businesses. Toronto, and anywhere on Zoom.</p>
     <a class="btn" id="hero-btn" data-link="BOOK_BORROW_MY_BRAIN"><span>Book Borrow My Brain, <span data-price="BORROW_MY_BRAIN_PRICE"></span></span></a>
     <p class="note">Pay on Ko-fi, then pick your time. <a href="#borrow-my-brain">See how it works</a></p>
+    </div>
   </div>
 </header>
 
@@ -239,7 +254,9 @@ footer p{margin:0}
 </section>
 
 <section id="about">
-  <div class="wrap">
+  <div class="wrap about-grid">
+    <img class="art" src="images/art.webp" width="1600" height="678" loading="lazy" decoding="async" alt="Watercolor illustration of a purple pipe with a crack in it, circled in gold, leaking green water while a stream pours from the open end.">
+    <div class="about-text">
     <h2>About</h2>
     <p>I run a trauma-informed business consulting practice helping artists, makers, and creative small business owners build work that actually fits their capacity. You can't build something sustainable if your body doesn't feel safe. You can't tune into market signals if you can't hear your own.</p>
     <details>
@@ -249,6 +266,7 @@ footer p{margin:0}
       </div>
     </details>
     <p class="credentials">17+ years corporate strategy (Target Canada, Mercedes-Benz, ATB Financial, Tangerine). Teaching yoga and meditation since 2017. Trauma of Money certified. Toronto, working across Canada.</p>
+    </div>
   </div>
 </section>
 
