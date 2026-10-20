@@ -38,7 +38,8 @@ var CONFIG = {
     INSTAGRAM: "https://www.instagram.com/itsallmarketing_IAM",
     KOFI: "https://ko-fi.com/danieve",
     COMMISSIONS: "https://ko-fi.com/danieve/commissions",
-    GITHUB: "https://github.com/danieveaudio"
+    GITHUB: "https://github.com/danieveaudio",
+    TELL_ME_MORE: "https://danieveaudio.github.io/Tell-me-more/"
   }
 };
 </script>
@@ -93,7 +94,7 @@ summary::-webkit-details-marker{display:none}
 summary::after{content:"";flex:none;width:18px;height:18px;background:linear-gradient(currentColor,currentColor) center/100% 2px no-repeat,linear-gradient(currentColor,currentColor) center/2px 100% no-repeat}
 details[open] summary::after{background:linear-gradient(currentColor,currentColor) center/100% 2px no-repeat}
 details .more{padding-top:1rem}
-figure{margin:0 0 1.5rem;max-width:700px}
+figure{margin:0 0 1.5rem;max-width:760px;position:relative}
 .art{display:block;width:100%;height:auto;border-radius:12px;margin:0 0 .5rem}
 figcaption{font-size:.9375rem;color:var(--ink);max-width:65ch}
 .about-photo{display:block;width:100%;max-width:280px;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:12px;margin:0 0 1rem}
@@ -115,6 +116,7 @@ footer p{margin:0}
   ol.cards{grid-template-columns:repeat(3,1fr);align-items:stretch}
   .card{padding:1.5rem 1.25rem}
   .hero{padding:3rem 0 2.5rem}
+  figcaption{position:absolute;left:5%;top:50%;transform:translateY(-50%);width:40%;margin:0;font-size:1.125rem;line-height:1.5}
   .hero-grid{display:grid;grid-template-columns:200px 1fr;gap:2rem;align-items:center}
   .headshot{width:200px;height:200px;margin:0}
   .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start}
@@ -200,7 +202,7 @@ footer p{margin:0}
     <h2>How Borrow My Brain works</h2>
     <ol class="steps">
       <li><strong>Book:</strong> the link to pick your session time is in your confirmation, and I send it again by email.</li>
-      <li><strong>Form:</strong> I email you the short questionnaire (about 15 minutes, it's how I come prepared).</li>
+      <li><strong>Form:</strong> <a data-link="TELL_ME_MORE">the short questionnaire</a> is here (about 15 minutes, it's how I come prepared).</li>
       <li><strong>Session:</strong> 90 minutes, we find where the value is getting lost and what to do first.</li>
       <li><strong>Game Plan:</strong> your written plan lands in your inbox, and you can reply to it with questions any time.</li>
     </ol>
@@ -218,7 +220,8 @@ footer p{margin:0}
     <div class="callout">
       <h2>What's free</h2>
       <p>Work in the Wild is my visibility framework, presence, proof and personality, open source on GitHub. Dani Eve Audio is the breathing and meditation audio that sits inside every plan I write: meditations, breathwork, bedtime stories.</p>
-      <p class="linklist"><a data-link="WORK_IN_THE_WILD">Work in the Wild</a><br><a data-link="AUDIO">Dani Eve Audio</a></p>
+      <p>Not ready to book? Tell me more is the same set of questions I'd ask you, free, and you keep your answers.</p>
+      <p class="linklist"><a data-link="WORK_IN_THE_WILD">Work in the Wild</a><br><a data-link="AUDIO">Dani Eve Audio</a><br><a data-link="TELL_ME_MORE">Tell me more</a></p>
     </div>
   </div>
 </section>
