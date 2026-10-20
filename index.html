@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dani Eve | Business strategy meets nervous system smarts</title>
-<meta name="description" content="Business strategy meets nervous system smarts. For artists, makers and creative small businesses. Toronto, and anywhere on Zoom.">
+<title>Dani Eve | Business strategy for artists, makers and creative small businesses, Toronto and on Zoom</title>
+<meta name="description" content="Business strategy that fits your brain. 90-minute Borrow My Brain sessions with a written Game Plan after. Toronto, or anywhere on Zoom.">
+<link rel="canonical" href="https://danieve.com/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://danieve.com/">
-<meta property="og:title" content="Dani Eve | Business strategy meets nervous system smarts">
-<meta property="og:description" content="Business strategy meets nervous system smarts. For artists, makers and creative small businesses. Toronto, and anywhere on Zoom.">
+<meta property="og:title" content="Dani Eve | Business strategy for artists, makers and creative small businesses, Toronto and on Zoom">
+<meta property="og:description" content="Business strategy that fits your brain. 90-minute Borrow My Brain sessions with a written Game Plan after. Toronto, or anywhere on Zoom.">
 <meta property="og:image" content="https://danieve.com/images/headshot.webp">
 <meta property="og:image:width" content="480">
 <meta property="og:image:height" content="480">
@@ -19,7 +20,8 @@
 
 <!-- ============================================================
      CONFIG: edit values here. Every price, the email and every
-     link on the page reads from this block. All prices are CA$.
+     link on the page reads from this block, and so does the
+     structured data in the page head. All prices are CA$.
      ============================================================ -->
 <script>
 var CONFIG = {
@@ -35,7 +37,8 @@ var CONFIG = {
     AUDIO: "https://www.youtube.com/@DaniEveintheWild",
     INSTAGRAM: "https://www.instagram.com/itsallmarketing_IAM",
     KOFI: "https://ko-fi.com/danieve",
-    COMMISSIONS: "https://ko-fi.com/danieve/commissions"
+    COMMISSIONS: "https://ko-fi.com/danieve/commissions",
+    GITHUB: "https://github.com/danieveaudio"
   }
 };
 </script>
@@ -49,7 +52,8 @@ var CONFIG = {
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:Lato,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:1.125rem;line-height:1.6;overflow-wrap:break-word}
 h1,h2,h3{font-family:Poppins,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--purple);line-height:1.3;margin:0 0 .5rem}
-h1{font-size:2.25rem;font-weight:700}
+h1{font-size:2.25rem;font-weight:700;margin-bottom:.75rem}
+h1 .tagline{display:block;font-family:Lato,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:1.1875rem;font-weight:700;line-height:1.6;color:var(--ink);margin-top:.5rem}
 h2{font-size:1.625rem;font-weight:600}
 h3{font-size:1.25rem;font-weight:600;margin-top:1.5rem}
 p{margin:0 0 1rem;max-width:65ch}
@@ -60,20 +64,17 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--purple);outline-of
 .wide{max-width:1040px;margin:0 auto;padding:0 16px}
 section{padding:2.5rem 0;border-top:1px solid var(--grey)}
 .hero{padding:1.5rem 0 1.75rem}
-.hero .sub{font-size:1.1875rem;font-weight:700}
 .hero p{margin-bottom:.75rem}
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;background:var(--amber);color:var(--ink);font-family:Poppins,system-ui,sans-serif;font-weight:600;font-size:1rem;line-height:1.3;text-decoration:none;border-radius:999px;padding:.75rem 1.5rem;text-align:center}
 .btn:hover{filter:brightness(.94)}
-.note{font-size:.9375rem;color:var(--ink);margin:.5rem 0 0}
+.note{font-size:.9375rem;color:var(--ink);margin:.5rem 0 1rem}
 .textlink{display:inline-block;min-height:44px;padding-top:.5rem}
 .headshot{display:block;width:96px;height:96px;border-radius:50%;object-fit:cover;margin:0 0 .75rem}
 .hero-text{min-width:0}
-.art{display:block;width:100%;height:auto;border-radius:12px;margin:0 0 1.5rem}
-.about-photo{display:block;width:100%;max-width:280px;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:12px;margin:0 0 1rem}
-.hero-grid.noimg,.about-grid.noimg{display:block}
 .proof{padding:1.25rem 0;border-top:1px solid var(--grey)}
-.proof p{margin:0 0 .5rem;max-width:none}
-.proof p:last-child{margin:0}
+.proof p{margin:0 0 .5rem}
+.proof ul{margin:0;padding-left:1.25rem;max-width:65ch}
+.proof li{margin-bottom:.35rem}
 ol.cards{list-style:none;margin:1rem 0 1.5rem;padding:0;display:grid;gap:1rem}
 .card{display:flex;flex-direction:column;border:2px solid var(--purple);border-radius:12px;padding:1.25rem 1rem;background:var(--paper)}
 .card h3{margin-top:0}
@@ -85,21 +86,18 @@ ol.cards{list-style:none;margin:1rem 0 1.5rem;padding:0;display:grid;gap:1rem}
 .small{font-size:.9375rem}
 ol.steps{list-style:none;counter-reset:s;margin:0 0 1rem;padding:0}
 ol.steps li{counter-increment:s;position:relative;padding:.25rem 0 .75rem 3rem;max-width:65ch}
-details{max-width:65ch}
-.wide details{max-width:none}
 ol.steps li::before{content:counter(s);position:absolute;left:0;top:.2rem;width:2rem;height:2rem;border-radius:50%;background:var(--purple);color:var(--paper);font-family:Poppins,system-ui,sans-serif;font-weight:600;display:flex;align-items:center;justify-content:center}
-details{margin:1.5rem 0 0}
+details{margin:1.5rem 0 0;max-width:65ch}
 summary{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:48px;padding:.5rem 1rem;border:2px solid var(--ink);border-radius:12px;cursor:pointer;list-style:none;font-family:Poppins,system-ui,sans-serif;font-weight:600;color:var(--ink)}
 summary::-webkit-details-marker{display:none}
 summary::after{content:"";flex:none;width:18px;height:18px;background:linear-gradient(currentColor,currentColor) center/100% 2px no-repeat,linear-gradient(currentColor,currentColor) center/2px 100% no-repeat}
 details[open] summary::after{background:linear-gradient(currentColor,currentColor) center/100% 2px no-repeat}
 details .more{padding-top:1rem}
-.phases{display:grid;gap:1rem;margin:1rem 0 1.5rem}
-.phase{border:2px solid var(--purple);border-radius:12px;padding:1.25rem 1rem}
-.phase h3{margin-top:0}
-.bigprice{font-family:Poppins,system-ui,sans-serif;font-size:1.75rem;font-weight:700;line-height:1.3;color:var(--ink)}
-.example{border-left:6px solid var(--purple);padding:.75rem 1rem;margin:0 0 1rem}
-.example p{margin:0}
+figure{margin:0 0 1.5rem;max-width:700px}
+.art{display:block;width:100%;height:auto;border-radius:12px;margin:0 0 .5rem}
+figcaption{font-size:.9375rem;color:var(--ink);max-width:65ch}
+.about-photo{display:block;width:100%;max-width:280px;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:12px;margin:0 0 1rem}
+.hero-grid.noimg,.about-grid.noimg{display:block}
 .callout{background:var(--mintfill);border-left:6px solid var(--mint);padding:1.25rem 1rem}
 .callout h2{font-size:1.125rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin:0 0 .5rem}
 .callout p:last-child{margin-bottom:0}
@@ -112,15 +110,15 @@ footer p{margin:0}
 .bookbar{display:none}
 @media (min-width:768px){
   h1{font-size:3rem}
+  h1 .tagline{font-size:1.25rem}
   h2{font-size:1.875rem}
   ol.cards{grid-template-columns:repeat(3,1fr);align-items:stretch}
   .card{padding:1.5rem 1.25rem}
-  .phases{grid-template-columns:1fr 1fr}
   .hero{padding:3rem 0 2.5rem}
   .hero-grid{display:grid;grid-template-columns:200px 1fr;gap:2rem;align-items:center}
   .headshot{width:200px;height:200px;margin:0}
   .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start}
-  .about-grid .about-photo{order:2;margin:0;max-width:none}
+  .about-grid .about-photo{order:2;margin:0;max-width:none;aspect-ratio:1/1;object-position:25% 35%}
   .about-grid .about-text{order:1}
 }
 @media (max-width:767px){
@@ -142,20 +140,25 @@ footer p{margin:0}
   <div class="wrap hero-grid">
     <img class="headshot" src="images/headshot.webp" width="480" height="480" alt="Portrait of Dani Eve wearing mint green glasses and a green top, with a calm half smile." decoding="async" fetchpriority="high" onerror="this.parentNode.classList.add('noimg');this.remove()">
     <div class="hero-text">
-    <h1>Dani Eve</h1>
-    <p class="sub">Business strategy meets nervous system smarts. I help you build something that works, for your business AND your brain.</p>
-    <p>I find where the value is getting lost, give it a name you can actually hold onto, and build the system that carries it, shaped around how you really work.</p>
+    <h1>Dani Eve <span class="tagline">Business strategy meets nervous system smarts. I help you build something that works, for your business AND your brain.</span></h1>
     <p>For artists, makers and creative small businesses. Toronto, and anywhere on Zoom.</p>
+    <p>I find where the value is getting lost, give it a name you can actually hold onto, and build the system that carries it, shaped around how you really work.</p>
     <a class="btn" id="hero-btn" data-link="BOOK_BORROW_MY_BRAIN"><span>Book Borrow My Brain, <span data-price="BORROW_MY_BRAIN_PRICE"></span></span></a>
-    <p class="note">Pay on Ko-fi, then pick your time. <a href="#borrow-my-brain">See how it works</a></p>
+    <p class="note">90 minutes on Zoom or in Toronto, then a written Game Plan in your inbox. <a href="#borrow-my-brain">See how it works</a></p>
+    <p>And if something feels impossible when you think about it (raising your prices, putting yourself out there, sending the invoice), there's usually a reason, and I can work with both the strategy and the stuff underneath it.</p>
     </div>
   </div>
 </header>
 
 <div class="proof">
   <div class="wrap">
-    <p>17+ years corporate strategy: Target Canada, Mercedes-Benz, ATB Financial, Tangerine.</p>
-    <p>Recent build: Ellice Yang Art, Klaviyo email engine.</p>
+    <p>17+ years corporate strategy (Target Canada, Mercedes-Benz, ATB Financial, Tangerine), now built for artists and makers.</p>
+    <p>Recent builds:</p>
+    <ul>
+      <li>Ellice Yang Art, Klaviyo email engine.</li>
+      <li>A trade program and outreach scripts for interior designers, a collection launch checklist, and a loyalty loop.</li>
+      <li>A concierge gifting starter kit, a pricing framework, and a warm outreach approach for her first five clients.</li>
+    </ul>
   </div>
 </div>
 
@@ -167,14 +170,15 @@ footer p{margin:0}
         <p class="step"><span class="num">1</span> Start here</p>
         <h3>Borrow My Brain</h3>
         <p class="price">90 minutes, <b><span data-price="BORROW_MY_BRAIN_PRICE"></span></b></p>
-        <p>I will fast follow with a written Game Plan. Your three priorities for the next 90 days, a rhythm that fits your actual life, and your first move.</p>
+        <p>You know what you're building. You're good at what you do. But there's a thing you can't quite see from inside it, and it's been bugging you.</p>
         <a class="btn" data-link="BOOK_BORROW_MY_BRAIN">Book Borrow My Brain</a>
       </li>
       <li class="card">
         <p class="step"><span class="num">2</span> Go deeper</p>
         <h3>Deep Dive</h3>
         <p class="price">Two phases. Discovery <b><span data-price="DEEP_DIVE_PHASE1"></span></b>, the Build from <b><span data-price="DEEP_DIVE_PHASE2_FROM"></span></b>.</p>
-        <p>Sometimes you need someone to actually sit inside the problem with you, figure out what's really going on, and build the structure around it.</p>
+        <p>Discovery: clarity on your core offer and a diagnosis of what's actually blocking progress.</p>
+        <p>The Build: roadmap, templates, outreach scripts, pricing structures and launch plans, built together or built by me, depending on what fits. Scoped after Discovery, because I won't quote what I don't know yet.</p>
         <p class="small">If we decide to go bigger after, the <span data-price="BORROW_MY_BRAIN_PRICE"></span> comes off your Deep Dive.</p>
         <a class="textlink" data-link="BOOK_BORROW_MY_BRAIN">Start with Borrow My Brain</a>
       </li>
@@ -186,71 +190,33 @@ footer p{margin:0}
         <a class="btn" data-mailto>Email me</a>
       </li>
     </ol>
-    <p>Not sure whether you need Borrow My Brain or Deep Dive? Just ask. I'd rather help you pick the right size than have you buy something that doesn't fit.</p>
+    <p>Not sure whether you need Borrow My Brain or Deep Dive? <a data-mailto>Just ask.</a> I'd rather help you pick the right size than have you buy something that doesn't fit.</p>
   </div>
 </section>
 
 <section id="borrow-my-brain">
   <div class="wrap">
-    <h2>Borrow My Brain</h2>
-    <p>You know what you're building. You're good at what you do. But there's a thing you can't quite see from inside it, and it's been bugging you.</p>
-    <h3>What happens after you pay</h3>
+    <h2>How Borrow My Brain works</h2>
     <ol class="steps">
       <li><strong>Book:</strong> the link to pick your session time is in your confirmation, and I send it again by email.</li>
       <li><strong>Form:</strong> I email you the short questionnaire (about 15 minutes, it's how I come prepared).</li>
       <li><strong>Session:</strong> 90 minutes, we find where the value is getting lost and what to do first.</li>
       <li><strong>Game Plan:</strong> your written plan lands in your inbox, and you can reply to it with questions any time.</li>
     </ol>
-    <p>And if something feels impossible when you think about it (raising your prices, putting yourself out there, sending the invoice), there's usually a reason. It's not that you're lazy. I can work with both the strategy and the stuff underneath it.</p>
+    <p>I will fast follow with a written Game Plan. Your three priorities for the next 90 days, a rhythm that fits your actual life, and your first move. Not a 50-page deck. Not a to-do list that makes you want to cry. Something you can actually use.</p>
     <a class="btn" data-link="BOOK_BORROW_MY_BRAIN">Book Borrow My Brain</a>
-    <details>
-      <summary>The longer version</summary>
-      <div class="more">
-        <p>That's what this is for. You borrow my brain for 90 minutes. I've spent 17+ years thinking about how businesses work (and why they don't), and I genuinely love the puzzle of someone else's situation. I will ask you questions until something clicks. You'll feel it when it does.</p>
-        <p>Here's what happens: you fill out a short questionnaire so I come prepared. (I promise it won't make you want to scream.) We meet for 90 minutes, Zoom or in-person if you're in Toronto. You talk about where you are and where you're trying to go. I listen for the patterns.</p>
-        <p>I will fast follow with a written Game Plan. Your three priorities for the next 90 days, a rhythm that fits your actual life, and your first move. Not a 50-page deck. Not a to-do list that makes you want to cry. Something you can actually use.</p>
-        <p>The math, for your brain that needs it: Cutting three things that waste your time gives you hours of your life back. Not running <span data-price="AD_EXAMPLE_SPEND"></span> in random ads saves more than this costs.</p>
-      </div>
-    </details>
-  </div>
-</section>
-
-<section id="deep-dive">
-  <div class="wide">
-    <h2>Deep Dive</h2>
-    <div class="phases">
-      <div class="phase">
-        <h3>Phase 1: Discovery</h3>
-        <p class="bigprice"><span data-price="DEEP_DIVE_PHASE1"></span></p>
-        <p>You walk away with clarity on your core offer, a diagnosis of what's actually blocking progress (often not what you thought), and a 90-day plan built around your real life.</p>
-      </div>
-      <div class="phase">
-        <h3>Phase 2: The Build</h3>
-        <p class="bigprice">from <span data-price="DEEP_DIVE_PHASE2_FROM"></span></p>
-        <p>This is where we build the actual thing. Roadmap, templates, outreach scripts, pricing structures, launch plans. Done with you or done for you, depending on what fits.</p>
-        <p>Phase 2 gets scoped after Phase 1, because I won't quote what I don't know yet.</p>
-      </div>
-    </div>
-    <div class="example">
-      <p>Real examples: one client walked out with a trade program and outreach scripts for interior designers, a collection launch checklist, and a loyalty loop. Another got a concierge gifting starter kit, a pricing framework, and a warm outreach approach for her first five clients. The stuff that actually moves the needle, built for your specific situation.</p>
-    </div>
-    <details>
-      <summary>The longer version</summary>
-      <div class="more">
-        <p>Sometimes one session isn't the thing. Sometimes you need someone to actually sit inside the problem with you, figure out what's really going on, and build the structure around it. That's Deep Dive.</p>
-        <p>I research your space before we ever meet. Then we have one or two real conversations (90 minutes each) where we do the diagnostic work. What are you actually offering? Who is it for? What's getting in the way? If you're fuzzy on direction, we do that work first. (No shame. Most people are.)</p>
-        <p>You pay for exactly what you need. Nothing you don't.</p>
-      </div>
-    </details>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <img class="art" src="images/art.webp" width="1600" height="678" loading="lazy" decoding="async" alt="Watercolor illustration of a purple pipe with a crack in it, circled in gold, leaking green water while a stream pours from the open end." onerror="this.remove()">
+    <figure>
+      <img class="art" src="images/art.webp" width="1600" height="678" loading="lazy" decoding="async" alt="Watercolor illustration of a purple pipe with a crack in it, circled in gold, leaking green water while a stream pours from the open end." onerror="this.parentNode.remove()">
+      <figcaption>Most businesses I meet aren't short on value. It's getting lost somewhere between the work and the money, and that's the kink I look for.</figcaption>
+    </figure>
     <div class="callout">
       <h2>What's free</h2>
-      <p>Work in the Wild is my visibility framework, presence, proof and personality, open source on GitHub. Dani Eve Audio is the regulation layer inside every build: meditations, breathwork, bedtime stories.</p>
+      <p>Work in the Wild is my visibility framework, presence, proof and personality, open source on GitHub. Dani Eve Audio is the breathing and meditation audio that sits inside every plan I write: meditations, breathwork, bedtime stories.</p>
       <p class="linklist"><a data-link="WORK_IN_THE_WILD">Work in the Wild</a><br><a data-link="AUDIO">Dani Eve Audio</a></p>
     </div>
   </div>
@@ -263,12 +229,12 @@ footer p{margin:0}
     <h2>About</h2>
     <p>I run a trauma-informed business consulting practice helping artists, makers, and creative small business owners build work that actually fits their capacity. You can't build something sustainable if your body doesn't feel safe. You can't tune into market signals if you can't hear your own.</p>
     <details>
-      <summary>The longer version</summary>
+      <summary>More about how I work</summary>
       <div class="more">
         <p>I specialize in strategic reframes, helping people look at their business, their blocks, and their patterns from angles they can't see on their own. I also create nervous system tools (audio, movement, somatic resources) because regulation and strategy aren't separate.</p>
       </div>
     </details>
-    <p class="credentials">17+ years corporate strategy (Target Canada, Mercedes-Benz, ATB Financial, Tangerine). Teaching yoga and meditation since 2017. Trauma of Money certified. Toronto, working across Canada.</p>
+    <p class="credentials">Teaching yoga and meditation since 2017. Trauma of Money certified. Toronto, working across Canada.</p>
     </div>
   </div>
 </section>
@@ -300,6 +266,51 @@ footer p{margin:0}
   document.querySelectorAll("[data-mailto]").forEach(function (el) {
     el.href = "mailto:" + CONFIG.EMAIL;
   });
+
+  /* Structured data, built from CONFIG so prices and links stay in one place. */
+  var L = CONFIG.LINKS, site = "https://danieve.com/";
+  var sameAs = [L.INSTAGRAM, L.KOFI, L.GITHUB, L.AUDIO];
+  var ld = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": site + "#dani",
+        "name": "Dani Eve",
+        "url": site,
+        "image": site + "images/headshot.webp",
+        "jobTitle": "Business strategist",
+        "description": "Dani Eve is a business strategist in Toronto who works with artists, makers and creative small businesses, in person or on Zoom.",
+        "address": { "@type": "PostalAddress", "addressLocality": "Toronto", "addressCountry": "CA" },
+        "sameAs": sameAs
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": site + "#service",
+        "name": "Dani Eve",
+        "url": site,
+        "image": site + "images/headshot.webp",
+        "founder": { "@id": site + "#dani" },
+        "areaServed": [{ "@type": "City", "name": "Toronto" }, { "@type": "Country", "name": "Canada" }],
+        "audience": { "@type": "Audience", "audienceType": "Artists, makers and creative small businesses" },
+        "sameAs": sameAs,
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Ways to work together",
+          "itemListElement": [
+            { "@type": "Offer", "name": "Borrow My Brain", "description": "90 minutes on Zoom or in Toronto, then a written Game Plan.", "price": String(CONFIG.BORROW_MY_BRAIN_PRICE), "priceCurrency": "CAD", "url": L.BOOK_BORROW_MY_BRAIN },
+            { "@type": "Offer", "name": "Deep Dive: Discovery", "price": String(CONFIG.DEEP_DIVE_PHASE1), "priceCurrency": "CAD", "url": L.BOOK_BORROW_MY_BRAIN },
+            { "@type": "Offer", "name": "Deep Dive: The Build", "priceSpecification": { "@type": "PriceSpecification", "minPrice": String(CONFIG.DEEP_DIVE_PHASE2_FROM), "priceCurrency": "CAD" }, "url": L.BOOK_BORROW_MY_BRAIN },
+            { "@type": "Offer", "name": "Monthly Retainer", "price": String(CONFIG.RETAINER), "priceCurrency": "CAD" }
+          ]
+        }
+      }
+    ]
+  };
+  var s = document.createElement("script");
+  s.type = "application/ld+json";
+  s.text = JSON.stringify(ld);
+  document.head.appendChild(s);
 
   /* Mobile booking bar: show after the hero button scrolls away, hide at the footer. */
   var bar = document.getElementById("bookbar");
